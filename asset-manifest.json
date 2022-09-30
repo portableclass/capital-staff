@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/capital-staff/static/css/main.2110bb95.css",
+    "main.js": "/capital-staff/static/js/main.edd668ac.js",
+    "static/js/787.d325f055.chunk.js": "/capital-staff/static/js/787.d325f055.chunk.js",
+    "static/media/mascota.svg": "/capital-staff/static/media/mascota.584aa7ff08d56e8a92bb.svg",
+    "static/media/TTHoves-ThinItalic.ttf": "/capital-staff/static/media/TTHoves-ThinItalic.556f5311323cce5f243c.ttf",
+    "static/media/TTHoves-ExtraLightItalic.ttf": "/capital-staff/static/media/TTHoves-ExtraLightItalic.4de5efa8c727da659293.ttf",
+    "static/media/TTHoves-HairlineItalic.ttf": "/capital-staff/static/media/TTHoves-HairlineItalic.b1317005206e778d0847.ttf",
+    "static/media/TTHoves-LightItalic.ttf": "/capital-staff/static/media/TTHoves-LightItalic.eb60515b3b1036761831.ttf",
+    "static/media/TTHoves-ExtraBoldItalic.ttf": "/capital-staff/static/media/TTHoves-ExtraBoldItalic.919962f71995930346cb.ttf",
+    "static/media/TTHoves-Italic.ttf": "/capital-staff/static/media/TTHoves-Italic.e2647303fb25a5e97220.ttf",
+    "static/media/TTHoves-BoldItalic.ttf": "/capital-staff/static/media/TTHoves-BoldItalic.8201ab6ae6bcec40b89c.ttf",
+    "static/media/TTHoves-MediumItalic.ttf": "/capital-staff/static/media/TTHoves-MediumItalic.5422c459bfd380c31edf.ttf",
+    "static/media/TTHoves-DemiBoldItalic.ttf": "/capital-staff/static/media/TTHoves-DemiBoldItalic.3f070d7a209ff71146d7.ttf",
+    "static/media/TTHoves-BlackItalic.ttf": "/capital-staff/static/media/TTHoves-BlackItalic.86a31d254f99aa98382e.ttf",
+    "static/media/TTHoves-ExtraLight.ttf": "/capital-staff/static/media/TTHoves-ExtraLight.9b1f45919fae946d0e3a.ttf",
+    "static/media/TTHoves-Thin.ttf": "/capital-staff/static/media/TTHoves-Thin.af5a990d287635969472.ttf",
+    "static/media/TTHoves-Light.ttf": "/capital-staff/static/media/TTHoves-Light.ff447b186f99becf2ff2.ttf",
+    "static/media/TTHoves-DemiBold.ttf": "/capital-staff/static/media/TTHoves-DemiBold.9f88b22cc90533ec5f8a.ttf",
+    "static/media/TTHoves-Bold.ttf": "/capital-staff/static/media/TTHoves-Bold.170a72c0ea1224530434.ttf",
+    "static/media/TTHoves-Regular.ttf": "/capital-staff/static/media/TTHoves-Regular.22badb647628141aaacb.ttf",
+    "static/media/TTHoves-Medium.ttf": "/capital-staff/static/media/TTHoves-Medium.c84646119459f89cd0d4.ttf",
+    "static/media/TTHoves-ExtraBold.ttf": "/capital-staff/static/media/TTHoves-ExtraBold.d065fa41b16fbd51e41d.ttf",
+    "static/media/TTHoves-Hairline.ttf": "/capital-staff/static/media/TTHoves-Hairline.44dca945d1420c196b8f.ttf",
+    "static/media/TTHoves-Black.ttf": "/capital-staff/static/media/TTHoves-Black.119920189c5db1ca7389.ttf",
+    "static/media/Gilroy-Medium.ttf": "/capital-staff/static/media/Gilroy-Medium.1c23f810e531d0702f76.ttf",
+    "index.html": "/capital-staff/index.html",
+    "main.2110bb95.css.map": "/capital-staff/static/css/main.2110bb95.css.map",
+    "main.edd668ac.js.map": "/capital-staff/static/js/main.edd668ac.js.map",
+    "787.d325f055.chunk.js.map": "/capital-staff/static/js/787.d325f055.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2110bb95.css",
+    "static/js/main.edd668ac.js"
+  ]
+}
