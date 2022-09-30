@@ -1,10 +1,10 @@
-
+import Header from "./Header"
 
 
 export const Workers = () => (
     <>
-        <div style={{fontSize: '60px', display: "flex"}}>
-            Workers
-        </div>    
+        <div style={{ display: "flex" }}>
+            <Header title={"Работники"} />
+        </div>     
     </>
 )

@@ -19,7 +19,7 @@ function App() {
   return (
     <Router>
 
-      <div style={{ display: "flex" }}>
+      <div style={{ display: "flex", position: "relative" }}>
         
         <Sidebar />
           

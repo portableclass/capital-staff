@@ -1,12 +1,9 @@
-
-
-
-
+import Header from "./Header"
 
 export const Contractors = () => (
     <>
-        <div style={{fontSize: '60px', display: "flex"}}>
-        Contractors
+        <div style={{ display: "flex" }}>
+            <Header title={"Подрядчики"} />
         </div>    
     </>
 )

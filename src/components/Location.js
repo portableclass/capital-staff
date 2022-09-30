@@ -1,9 +1,9 @@
-
+import Header from "./Header"
 
 export const Location = () => (
     <>
-        <div style={{fontSize: '60px', display: "flex"}}>
-            Location
-        </div> 
+        <div style={{ display: "flex" }}>
+            <Header title={"Локация"} />
+        </div>   
     </>
 )
