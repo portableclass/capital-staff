@@ -8,7 +8,7 @@ export default function  Sidebar() {
             <div className="sidebar-wrapper">
                 <Navbar className="sidebar">
                     <NavbarBrand>
-                        <Link to="/capital-staff">
+                        <Link to="/capital-staff/home">
                             <h1 className="brand">Капитал кадры</h1>
                         </Link>
                     </NavbarBrand>

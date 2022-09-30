@@ -8,6 +8,7 @@ import { Workplace } from './components/Workplace';
 import { Workers } from './components/Workers';
 import { Contractors } from './components/Contractors';
 import { Users } from './components/Users';
+import { Login } from './components/Login';
 
 import {
   BrowserRouter as Router,
@@ -27,13 +28,14 @@ function App() {
           <TopNav/>
             
           <Routes>
-            <Route exact path="/capital-staff" element={<Home/>}/>
+            <Route exact path="/capital-staff/home" element={<Home/>}/>
             <Route path="/capital-staff/location" element={<Location />} />
             <Route path="/capital-staff/workplace" element={<Workplace />} />
             <Route path="/capital-staff/workers" element={<Workers />} />
             <Route path="/capital-staff/contractors" element={<Contractors />} />
             <Route path="/capital-staff/organization" element={<Organization />} />
-            <Route path="/capital-staff/users" element={<Users/>}/>
+            <Route path="/capital-staff/users" element={<Users />} />
+            <Route path="/capital-staff/login" element={<Login />}/>
           </Routes>
         </div>
         
