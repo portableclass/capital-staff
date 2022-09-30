@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/capital-staff/static/css/main.d7a2f1c1.css",
-    "main.js": "/capital-staff/static/js/main.2ce772b8.js",
+    "main.css": "/capital-staff/static/css/main.360abe9f.css",
+    "main.js": "/capital-staff/static/js/main.a67cf39c.js",
     "static/js/787.d325f055.chunk.js": "/capital-staff/static/js/787.d325f055.chunk.js",
     "static/media/mascota.svg": "/capital-staff/static/media/mascota.584aa7ff08d56e8a92bb.svg",
     "static/media/TTHoves-ThinItalic.ttf": "/capital-staff/static/media/TTHoves-ThinItalic.556f5311323cce5f243c.ttf",
@@ -26,12 +26,12 @@
     "static/media/TTHoves-Black.ttf": "/capital-staff/static/media/TTHoves-Black.119920189c5db1ca7389.ttf",
     "static/media/Gilroy-Medium.ttf": "/capital-staff/static/media/Gilroy-Medium.1c23f810e531d0702f76.ttf",
     "index.html": "/capital-staff/index.html",
-    "main.d7a2f1c1.css.map": "/capital-staff/static/css/main.d7a2f1c1.css.map",
-    "main.2ce772b8.js.map": "/capital-staff/static/js/main.2ce772b8.js.map",
+    "main.360abe9f.css.map": "/capital-staff/static/css/main.360abe9f.css.map",
+    "main.a67cf39c.js.map": "/capital-staff/static/js/main.a67cf39c.js.map",
     "787.d325f055.chunk.js.map": "/capital-staff/static/js/787.d325f055.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d7a2f1c1.css",
-    "static/js/main.2ce772b8.js"
+    "static/css/main.360abe9f.css",
+    "static/js/main.a67cf39c.js"
   ]
 }
