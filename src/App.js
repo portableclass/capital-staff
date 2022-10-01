@@ -28,7 +28,7 @@ function App() {
           <TopNav/>
             
           <Routes>
-            <Route exact path="/capital-staff/home" element={<Home/>}/>
+            <Route exact path="/capital-staff" element={<Home/>}/>
             <Route path="/capital-staff/location" element={<Location />} />
             <Route path="/capital-staff/workplace" element={<Workplace />} />
             <Route path="/capital-staff/workers" element={<Workers />} />
