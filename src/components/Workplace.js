@@ -1,9 +1,11 @@
 import Header from "./Header"
 
-export const Workplace = () => (
-    <>
-        <div style={{ display: "flex" }}>
-            <Header title={"Рабочее место"} />
-        </div>      
-    </>
-)
+export const Workplace = () => {
+    return (
+        <>
+            <div style={{ display: "flex" }}>
+                <Header title={"Рабочее место"} />
+            </div>      
+        </>
+    )
+}

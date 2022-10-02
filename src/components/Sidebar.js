@@ -9,7 +9,7 @@ export default function  Sidebar() {
                 <Navbar className="sidebar">
                     <NavbarBrand>
                         <Link to="/capital-staff">
-                            <h1 className="brand">Капитал кадры</h1>
+                            <h1 className="brand">Капитал Кадры</h1>
                         </Link>
                     </NavbarBrand>
                     <Nav>
