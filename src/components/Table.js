@@ -114,7 +114,7 @@ export default function Table({ columns, data,
             <div className="table-header-wrapper">
                 <div className="table-header">
                     <span className="table-ico">
-                        <svg viewBox="0 0 24 24" width="16" height="16" class="inline-block">
+                        <svg viewBox="0 0 24 24" width="16" height="16" className="inline-block">
                             <path d={ pathSvg } />
                         </svg>
                     </span>
@@ -124,12 +124,12 @@ export default function Table({ columns, data,
                     <ButtonTable type="create" />
                 </div>
             </div>
-            <table class="table">
+            <table className="table" {...getTableProps()}>
                 <thead>
                     {headerGroups.map(headerGroup => (
-                        <tr {...headerGroup.getHeaderGroupProps()}>
+                        <tr {...headerGroup.getHeaderGroupProps()} key={headerGroup.id}>
                             {headerGroup.headers.map(column => (
-                                <th {...column.getHeaderProps()} >
+                                <th {...column.getHeaderProps()}>
                                     { column.render('Header') }
                                 </th>
                             ))}
@@ -137,11 +137,11 @@ export default function Table({ columns, data,
                         </tr>
                     ))}
                 </thead>
-                <tbody>
+                <tbody {...getTableBodyProps()}>
                     {tempRows.map(row => {
                         prepareRow(row)
                         return (
-                            <tr {...row.getRowProps()}>
+                            <tr {...row.getRowProps()} key={row.id}>
                                 {row.cells.map(cell => {
                                     return <td {...cell.getCellProps()}>
                                         {cell.render('Cell')}
@@ -185,34 +185,6 @@ export default function Table({ columns, data,
                     <p>{ "Page " + currentPage + " of " + pagesCount }</p>
                 </div>
             </div>
-                    {/* <td style={{justifyContent: "left"}}>
-                        <div className="page-wrapper">
-                            {
-                                Array.from({ length: pagesCount }, (_, index) => index + 1)
-                                    .map(page => {
-                                        if (page === currentPage) {
-                                            return <a  href={"#" + page} onClick={() => handlePage(page)} style={{border: "3px solid black"}}>
-                                                        <span>
-                                                            {page}
-                                                        </span>
-                                                    </a>
-                                        }
-                                        else {
-                                            return <a href={"#" + page} onClick={() => handlePage(page)}>
-                                                        <span>
-                                                            {page}
-                                                        </span>
-                                                    </a>
-                                        }
-                                    })
-                            }
-                        </div>
-                    </td>
-
-                    <div style={{marginRight: "16px", display: "flex", alignItems: "center", width:"80px", justifyContent: "flex-end"}}>
-                        <p>{ "Page " + currentPage + " of " + pagesCount }</p>
-                    </div> */}
-
         </div>        
     )
 }

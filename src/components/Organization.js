@@ -43,7 +43,7 @@ export const Organization = () => {
     },
     {
         id: 4,
-        name: "Капитал кадры",
+        name: "Капитал кадрыКапитал кадрыКапитал кадрыКапитал кадры",
     },
     {
         id: 5,
@@ -92,7 +92,7 @@ export const Organization = () => {
     return (
         <>
             <div style={{display: "flex"}}>
-                <Header tittle={"Организация"} />
+                <Header title={"Организация"} />
             </div>
 
             <Table

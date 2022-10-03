@@ -30,8 +30,29 @@
 
 }
 @media (max-width: 768px) {
-
+    .app-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .content {
+        min-width: 100vh;
+    }
+    .sidebar-wrapper {
+        min-width: 100vh;
+        min-height: unset;
+    }
+    .navigation-wrapper {
+        display: none;
+    }
 }
+
+@media (max-width: 690px) {
+    main {
+        width: 100%;
+    }
+}
+
 @media (max-width: 640px) {
 }
 

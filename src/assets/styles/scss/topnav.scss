@@ -11,6 +11,7 @@
 }
 
 .dropdown {
+    position: static!important;
     float: left;
     overflow: hidden;
     &:hover .dropdown-content {
@@ -52,6 +53,7 @@
 .user-name {
     display: flex;
     margin: 0 20px;
+    align-items: center;
     span {
         display: flex;
         text-align: center;
@@ -81,6 +83,7 @@
         display: flex;
         justify-content: left;
         align-items: center;
+        text-decoration: none;
         &:hover span {
             color: #31d79b;
         }

@@ -15,7 +15,7 @@ export const ButtonTable = ({type, href = "#"}) => {
 
         return <a href={href} className={"button-table " + type}>
                     <span>
-                        <svg viewBox="0 0 24 24" width="16" height="16" class="inline-block">
+                        <svg viewBox="0 0 24 24" width="16" height="16" className="inline-block">
                             <path d={path} />
                         </svg>
                     </span> 

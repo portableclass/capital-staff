@@ -19,23 +19,25 @@ function App() {
   return (
     <Router>
 
-      <div style={{ display: "flex", position: "relative" }}>
+      <div className="app-wrapper">
         
-        {/* <Sidebar /> */}
+        <Sidebar />
           
-        <div style={{ display: "flex", flexWrap: "wrap", flexDirection: "column", width: "100%" }}>
-          <TopNav/>
-            
-          <Routes>
-            <Route exact path="/capital-staff" element={<Home/>}/>
-            <Route path="/capital-staff/location" element={<Location />} />
-            <Route path="/capital-staff/workplace" element={<Workplace />} />
-            <Route path="/capital-staff/workers" element={<Workers />} />
-            <Route path="/capital-staff/contractors" element={<Contractors />} />
-            <Route path="/capital-staff/organization" element={<Organization />} />
-            <Route path="/capital-staff/users" element={<Users />} />
-            <Route path="/capital-staff/login" element={<Login />}/>
-          </Routes>
+        <div className="content">
+          <TopNav />
+          
+          <main>
+            <Routes>
+              <Route exact path="/capital-staff" element={<Home/>}/>
+              <Route path="/capital-staff/location" element={<Location />} />
+              <Route path="/capital-staff/workplace" element={<Workplace />} />
+              <Route path="/capital-staff/workers" element={<Workers />} />
+              <Route path="/capital-staff/contractors" element={<Contractors />} />
+              <Route path="/capital-staff/organization" element={<Organization />} />
+              <Route path="/capital-staff/users" element={<Users />} />
+              <Route path="/capital-staff/login" element={<Login />}/>
+            </Routes>
+          </main>
         </div>
         
       </div>   
