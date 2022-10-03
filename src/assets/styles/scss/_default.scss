@@ -24,11 +24,11 @@ h1, h2, h3, h4, h5, h6 {font-size: inherit; font-weight: inherit;}
 /* --- Default styles */
 @font-face {
     font-family: 'TTHoves-Black';
-    src: local('TTHoves-Black'), url('../fonts/TTHoves/TTHoves-Black.ttf') format('truetype');
+    src: local('TTHoves-Black'), url('../../fonts/TTHoves/TTHoves-Black.ttf') format('truetype');
 }
 @font-face {
     font-family: 'TTHoves-BlackItalic';
-    src: local('TTHoves-BlackItalic'), url('../fonts/TTHoves/TTHoves-BlackItalic.ttf') format('truetype');
+    src: local('TTHoves-BlackItalic'), url('../../fonts/TTHoves/TTHoves-BlackItalic.ttf') format('truetype');
 }
 @font-face {
     font-family: 'TTHoves-Bold';
@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5, h6 {font-size: inherit; font-weight: inherit;}
     font-weight: bold;
     font-size: 18px;
     line-height: 50px;
-    src: local('TTHoves-Bold'), url('../fonts/TTHoves/TTHoves-Bold.ttf') format('truetype');
+    src: local('TTHoves-Bold'), url('../../fonts/TTHoves/TTHoves-Bold.ttf') format('truetype');
 }
 @font-face {
     font-family: 'TTHoves-BoldItalic';
@@ -44,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {font-size: inherit; font-weight: inherit;}
     font-weight: bold;
     font-size: 18px;
     line-height: 50px;
-    src: local('TTHoves-BoldItalic'), url('../fonts/TTHoves/TTHoves-BoldItalic.ttf') format('truetype');
+    src: local('TTHoves-BoldItalic'), url('../../fonts/TTHoves/TTHoves-BoldItalic.ttf') format('truetype');
 }
 @font-face {
     font-family: 'TTHoves-DemiBold';
@@ -52,7 +52,7 @@ h1, h2, h3, h4, h5, h6 {font-size: inherit; font-weight: inherit;}
     font-weight: 600;
     font-size: 14px;
     line-height: 16px;
-    src: local('TTHoves-DemiBold'), url('../fonts/TTHoves/TTHoves-DemiBold.ttf') format('truetype');
+    src: local('TTHoves-DemiBold'), url('../../fonts/TTHoves/TTHoves-DemiBold.ttf') format('truetype');
 }
 @font-face {
     font-family: 'TTHoves-DemiBoldItalic';
@@ -60,7 +60,7 @@ h1, h2, h3, h4, h5, h6 {font-size: inherit; font-weight: inherit;}
     font-weight: 600;
     font-size: 14px;
     line-height: 16px;
-    src: local('TTHoves-DemiBoldItalic'), url('../fonts/TTHoves/TTHoves-DemiBoldItalic.ttf') format('truetype');
+    src: local('TTHoves-DemiBoldItalic'), url('../../fonts/TTHoves/TTHoves-DemiBoldItalic.ttf') format('truetype');
 }
 @font-face {
     font-family: 'TTHoves-ExtraBold';
@@ -68,7 +68,7 @@ h1, h2, h3, h4, h5, h6 {font-size: inherit; font-weight: inherit;}
     font-weight: 800;
     font-size: 50px;
     line-height: 50px;
-    src: local('TTHoves-ExtraBold'), url('../fonts/TTHoves/TTHoves-ExtraBold.ttf') format('truetype');
+    src: local('TTHoves-ExtraBold'), url('../../fonts/TTHoves/TTHoves-ExtraBold.ttf') format('truetype');
 }
 @font-face {
     font-family: 'TTHoves-ExtraBoldItalic';
@@ -76,27 +76,27 @@ h1, h2, h3, h4, h5, h6 {font-size: inherit; font-weight: inherit;}
     font-weight: 800;
     font-size: 50px;
     line-height: 50px;
-    src: local('TTHoves-ExtraBoldItalic'), url('../fonts/TTHoves/TTHoves-ExtraBoldItalic.ttf') format('truetype');
+    src: local('TTHoves-ExtraBoldItalic'), url('../../fonts/TTHoves/TTHoves-ExtraBoldItalic.ttf') format('truetype');
 }
 @font-face {
     font-family: 'TTHoves-ExtraLight';
-    src: local('TTHoves-ExtraLight'), url('../fonts/TTHoves/TTHoves-ExtraLight.ttf') format('truetype');
+    src: local('TTHoves-ExtraLight'), url('../../fonts/TTHoves/TTHoves-ExtraLight.ttf') format('truetype');
 }
 @font-face {
     font-family: 'TTHoves-ExtraLightItalic';
-    src: local('TTHoves-ExtraLightItalic'), url('../fonts/TTHoves/TTHoves-ExtraLightItalic.ttf') format('truetype');
+    src: local('TTHoves-ExtraLightItalic'), url('../../fonts/TTHoves/TTHoves-ExtraLightItalic.ttf') format('truetype');
 }
 @font-face {
     font-family: 'TTHoves-Hairline';
-    src: local('TTHoves-Hairline'), url('../fonts/TTHoves/TTHoves-Hairline.ttf') format('truetype');
+    src: local('TTHoves-Hairline'), url('../../fonts/TTHoves/TTHoves-Hairline.ttf') format('truetype');
 }
 @font-face {
     font-family: 'TTHoves-HairlineItalic';
-    src: local('TTHoves-HairlineItalic'), url('../fonts/TTHoves/TTHoves-HairlineItalic.ttf') format('truetype');
+    src: local('TTHoves-HairlineItalic'), url('../../fonts/TTHoves/TTHoves-HairlineItalic.ttf') format('truetype');
 }
 @font-face {
     font-family: 'TTHoves-Italic';
-    src: local('TTHoves-Italic'), url('../fonts/TTHoves/TTHoves-Italic.ttf') format('truetype');
+    src: local('TTHoves-Italic'), url('../../fonts/TTHoves/TTHoves-Italic.ttf') format('truetype');
 }
 @font-face {
     font-family: 'TTHoves-Light';
@@ -104,7 +104,7 @@ h1, h2, h3, h4, h5, h6 {font-size: inherit; font-weight: inherit;}
     font-weight: 300;
     font-size: 14px;
     line-height: 20px;
-    src: local('TTHoves-Light'), url('../fonts/TTHoves/TTHoves-Light.ttf') format('truetype');
+    src: local('TTHoves-Light'), url('../../fonts/TTHoves/TTHoves-Light.ttf') format('truetype');
 }
 @font-face {
     font-family: 'TTHoves-LightItalic';
@@ -112,7 +112,7 @@ h1, h2, h3, h4, h5, h6 {font-size: inherit; font-weight: inherit;}
     font-weight: 300;
     font-size: 14px;
     line-height: 20px;
-    src: local('TTHoves-LightItalic'), url('../fonts/TTHoves/TTHoves-LightItalic.ttf') format('truetype');
+    src: local('TTHoves-LightItalic'), url('../../fonts/TTHoves/TTHoves-LightItalic.ttf') format('truetype');
 }
 @font-face {
     font-family: 'TTHoves-Medium';
@@ -120,7 +120,7 @@ h1, h2, h3, h4, h5, h6 {font-size: inherit; font-weight: inherit;}
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
-    src: local('TTHoves-Medium'), url('../fonts/TTHoves/TTHoves-Medium.ttf') format('truetype');
+    src: local('TTHoves-Medium'), url('../../fonts/TTHoves/TTHoves-Medium.ttf') format('truetype');
 }
 @font-face {
     font-family: 'TTHoves-MediumItalic';
@@ -128,7 +128,7 @@ h1, h2, h3, h4, h5, h6 {font-size: inherit; font-weight: inherit;}
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
-    src: local('TTHoves-MediumItalic'), url('../fonts/TTHoves/TTHoves-MediumItalic.ttf') format('truetype');
+    src: local('TTHoves-MediumItalic'), url('../../fonts/TTHoves/TTHoves-MediumItalic.ttf') format('truetype');
 }
 @font-face {
     font-family: 'TTHoves-Regular';
@@ -136,15 +136,15 @@ h1, h2, h3, h4, h5, h6 {font-size: inherit; font-weight: inherit;}
     font-weight: normal;
     font-size: 24px;
     line-height: 20px;
-    src: local('TTHoves-Regular'), url('../fonts/TTHoves/TTHoves-Regular.ttf') format('truetype');
+    src: local('TTHoves-Regular'), url('../../fonts/TTHoves/TTHoves-Regular.ttf') format('truetype');
 }
 @font-face {
     font-family: 'TTHoves-Thin';
-    src: local('TTHoves-Thin'), url('../fonts/TTHoves/TTHoves-Thin.ttf') format('truetype');
+    src: local('TTHoves-Thin'), url('../../fonts/TTHoves/TTHoves-Thin.ttf') format('truetype');
 }
 @font-face {
     font-family: 'TTHoves-ThinItalic';
-    src: local('TTHoves-ThinItalic'), url('../fonts/TTHoves/TTHoves-ThinItalic.ttf') format('truetype');
+    src: local('TTHoves-ThinItalic'), url('../../fonts/TTHoves/TTHoves-ThinItalic.ttf') format('truetype');
 }
 
 * {
@@ -156,13 +156,12 @@ main {
     position: relative;
     flex-wrap: wrap;
     flex-direction: column;
-    height: 100vh;
-    background-color: #FAFAFA;
-
+    min-height: 100vh;
+    background-color: $backgroundGrey;
 }
 
 span {
-    color: black;
+    color: $black;
 }
 
 .app-wrapper {

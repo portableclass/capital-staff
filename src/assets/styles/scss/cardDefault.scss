@@ -1,0 +1,42 @@
+@import "default";
+
+.card-wrapper {
+    display: inline-flex;
+    position: relative;
+    width: 32%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+    background-color: $white;
+    border: 1px solid $borderGrey;
+}
+
+.description-wrapper {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.card-title {
+    color: $textGrey;
+    font-family: 'TTHoves-Regular', sans-serif;
+    font-size: 18px;
+}
+
+.card-number {
+    color: $black;
+    font-size: 28px;
+    font-family: 'TTHoves-DemiBold';
+    line-height: 1.25;
+    margin: 0;
+}
+
+.card-ico {
+    svg {
+        height: 48px;
+        width: 48px;
+    }
+}

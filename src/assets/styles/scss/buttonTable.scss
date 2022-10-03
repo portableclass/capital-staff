@@ -14,42 +14,42 @@
         align-items: center;
     }
     span svg {
-        fill: white;
+        fill: $white;
     }
 }
 
 .create {
     margin-right: 0px;
     span svg {
-        fill: black;
+        fill: $black;
     }
 }
 
 .read {
-    background-color: #2563EB;
+    background-color: $btnTableRead;
     &:hover {
-        background-color: #2250b2;
+        background-color: $btnTableReadHover;
     }
 }
 
 .update {
-    background-color: #2563EB;
+    background-color: $btnTableUpdate;
     &:hover {
-        background-color: #2250b2;
+        background-color: $btnTableUpdateHover;
     }
 }
 
 .delete {
-    background-color: #DC2626;
+    background-color: $btnTableDelete;
     margin-right: 0px;
     &:hover {
-        background-color: #9e2424;
+        background-color: $btnTableDeleteHover;
     }
 }
 
 .statistics {
-    background-color: #059669;
+    background-color: $btnTableStatistics;
     &:hover {
-        background-color: #187c5c;
+        background-color: $btnTableStatisticsHover;
     }
 }

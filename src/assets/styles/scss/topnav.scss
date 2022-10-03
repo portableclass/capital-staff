@@ -2,12 +2,17 @@
 
 .topnav-wrapper {
     display: flex;
+    position: sticky;
+    top: 0px;
+    height: 56px;
     justify-content: flex-end;
     align-items: center;
     align-content: stretch;
     border-style: solid;
-    border-color: #e5e7eb;
+    border-color: $borderGrey;
     border-bottom-width: 1px;
+    background-color: $white;
+    z-index: 1;
 }
 
 .dropdown {
@@ -17,12 +22,15 @@
     &:hover .dropdown-content {
         display: block;
     }
+    &:hover .user-name span {
+        color: $elemGreen;
+    }
     &:hover .user-name svg {
         transform: rotate(0deg);
-        fill: #31d79b;
+        fill: $elemGreen;
     }
     &:hover .user-avatar {
-        border-color: #31d79b;
+        border-color: $elemGreen;
     }
 }
 
@@ -30,40 +38,40 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 14px 12px;
+    padding: 12px 0px;
     align-content: center;
 }
 
 .user-avatar {
     display: flex;
-    height: 24px;
-    width: 24px;
+    width: 32px;
+    height: 32px;
     background-color: $white;
     border-radius: 50%;
-    padding: 12px;
-    background-image: url('../img/mascota.svg');
+    background-image: url('../../img/mascota.svg');
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
     border-style: solid;
-    border-color: #e5e7eb;
+    border-color: $borderGrey;
     border-width: 2px;
+    margin: 0px;
 }
 
 .user-name {
     display: flex;
-    margin: 0 20px;
+    margin: 0px 32px 0px 20px;
     align-items: center;
     span {
         display: flex;
         text-align: center;
         font-family: 'TTHoves-Regular', sans-serif;
-        color: black;
+        color: $black;
         font-size: 16px;
         padding: 0 8px;
     }
     svg {
-        fill: black;
+        fill: $black;
         transform: rotate(180deg);
     }
 }
@@ -71,10 +79,10 @@
 .dropdown-content {
     display: none;
     position: absolute;
-    min-width: 152px;
     justify-content: space-around;
-    background-color: white;
+    background-color: $white;
     box-shadow: 0 4px 6px -1px rgba(0,0,0,.1), 0 2px 4px -2px rgba(0,0,0,.1);
+    border: 1px solid $borderGrey;
     z-index: 1;
     a {
         float: none;
@@ -85,19 +93,19 @@
         align-items: center;
         text-decoration: none;
         &:hover span {
-            color: #31d79b;
+            color: $elemGreen;
         }
         &:hover svg {
-            fill: #31d79b;
+            fill: $elemGreen;
         }
         svg {
-            fill: black;
+            fill: $black;
         }
         span {
             display: flex;
             text-align: center;
             font-family: 'TTHoves-Regular', sans-serif;
-            color: black;
+            color: $black;
             font-size: 16px;
             padding: 0px 12px;
         }
@@ -109,13 +117,13 @@
     box-sizing: border-box;
     padding: 20px 24px;
     border-style: solid;
-    border-color: #e5e7eb;
+    border-color: $borderGrey;
     border-left-width: 1px;
     svg {
-        fill: black;
+        fill: $black;
     }
 
     &:hover svg {
-        fill: #31d79b;
+        fill: $elemGreen;
     }
 }

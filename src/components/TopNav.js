@@ -1,4 +1,4 @@
-import '../assets/styles/topnav.css';
+import '../assets/styles/css/topnav.css';
 
 export default function TopNav() {
     return (

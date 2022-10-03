@@ -5,7 +5,7 @@
     position: relative;
     flex-wrap: wrap;
     flex-direction: row;
-    background-color: #FAFAFA;
+    background-color: $backgroundGrey;
     width: 100%;
     padding: 24px;
     text-align: center;
@@ -14,6 +14,6 @@
     h2 {
         font-size: 24px;
         margin: 0px;
-        color: black;
+        color: $black;
     }
 }

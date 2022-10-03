@@ -18,6 +18,17 @@
 @media (max-width: 1200px) {
 }
 @media (max-width: 1080px) {
+    .short-info-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .card-wrapper {
+        width: 100%;
+        &:nth-child(n+2) {
+            margin-top: 12px;
+        }
+    }
 
 }
 @media (max-width: 1050px) {
@@ -43,7 +54,26 @@
         min-height: unset;
     }
     .navigation-wrapper {
-        display: none;
+        // display: none;
+        justify-content: center;
+        align-items: center;
+    }
+    .brand {
+        justify-content: center;
+    }
+    .separating-topics {
+        text-align: center;
+    }
+    .link-wrapper {
+        display: inline-flex;
+        position: relative;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    .link {
+        justify-content: center;
     }
 }
 

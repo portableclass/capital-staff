@@ -8,7 +8,7 @@
     min-height: 100vh;
     // background: linear-gradient(90deg, rgba(37, 39, 121, 1) 0%, rgba(21,20,60,1) 100%);
     // background: linear-gradient(90deg, rgba(81,111,165,1) 0%, rgba(48,141,146,1) 100%);
-    background-color: rgb(31, 41, 55);
+    background-color: $backgroundDarkBlue;
 }
 
 .sidebar {
@@ -24,7 +24,7 @@
         height: 56px;
         padding: 12px;
         color: $white;
-        background-color: #111827;
+        background-color: $backgroundBrandBlue;
         font-size: 16px;
         font-family: 'TTHoves-Bold';
         margin: 0px;
@@ -38,28 +38,30 @@
     padding: 12px;
     align-items: center;
     width: 100%;
-    color: #9CA3AF;
+    color: $textLightGrey;
     font-family: 'TTHoves-Regular', sans-serif;
+    font-size: 12px;
     text-transform: uppercase;
 }
 
 .link {
     display: inline-flex;
-    padding: 12px;
+    padding: 8px 12px;
     align-items: center;
     width: 100%;
     color: unset;
     svg {
-        fill: white;
+        fill: $textLightGrey2;
     }
-    span {
-        font-family: 'TTHoves-DemiBold', sans-serif;
-        color: $white;
-        margin-left: 12px;
+    p {
+        font-size: 16px;
+        font-family: 'TTHoves-Regular', sans-serif;
+        color: $textLightGrey2;
+        margin: 0px 0px 0px 12px;
         text-decoration: none;
     }
     &:hover {
-        background: linear-gradient(90deg, rgb(53, 73, 111) 0%, rgb(32, 95, 98) 100%);
+        background-color: $backgroundDarkBlueHover;
     }
 }
 

@@ -1,4 +1,4 @@
-import '../assets/styles/buttonTable.css';
+import '../assets/styles/css/buttonTable.css';
 
 export const ButtonTable = ({type, href = "#"}) => {
 

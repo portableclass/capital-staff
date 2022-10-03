@@ -8,7 +8,7 @@
         {
             "format": "compressed",
             "extensionName": ".css",
-            "savePath": "src/assets/styles"
+            "savePath": "src/assets/styles/css"
         }
     ]
 
