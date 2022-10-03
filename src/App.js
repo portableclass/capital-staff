@@ -1,4 +1,3 @@
-import './App.css';
 import Sidebar from './components/Sidebar';
 import TopNav from './components/TopNav';
 import { Home } from './components/Home';
@@ -22,7 +21,7 @@ function App() {
 
       <div style={{ display: "flex", position: "relative" }}>
         
-        <Sidebar />
+        {/* <Sidebar /> */}
           
         <div style={{ display: "flex", flexWrap: "wrap", flexDirection: "column", width: "100%" }}>
           <TopNav/>

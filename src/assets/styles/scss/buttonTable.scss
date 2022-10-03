@@ -1,0 +1,55 @@
+@import "default";
+
+.button-table {
+    display: flex;
+    height: 34px;
+    width: 34px;
+    position: relative;
+    justify-content: center;
+    margin-right: 12px;
+    border-radius: 0.25rem;
+    span {
+        display: flex;
+        position: relative;
+        align-items: center;
+    }
+    span svg {
+        fill: white;
+    }
+}
+
+.create {
+    margin-right: 0px;
+    span svg {
+        fill: black;
+    }
+}
+
+.read {
+    background-color: #2563EB;
+    &:hover {
+        background-color: #2250b2;
+    }
+}
+
+.update {
+    background-color: #2563EB;
+    &:hover {
+        background-color: #2250b2;
+    }
+}
+
+.delete {
+    background-color: #DC2626;
+    margin-right: 0px;
+    &:hover {
+        background-color: #9e2424;
+    }
+}
+
+.statistics {
+    background-color: #059669;
+    &:hover {
+        background-color: #187c5c;
+    }
+}

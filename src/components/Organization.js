@@ -92,7 +92,7 @@ export const Organization = () => {
     return (
         <>
             <div style={{display: "flex"}}>
-                <Header title={"Организация"} />
+                <Header tittle={"Организация"} />
             </div>
 
             <Table
