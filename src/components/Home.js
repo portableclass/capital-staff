@@ -1,8 +1,67 @@
 import Header from "./Header"
 import { CardDefault } from "./CardDefault"
 import '../assets/styles/css/home.css';
+import {
+    Chart as ChartJS,
+    CategoryScale,
+    LinearScale,
+    PointElement,
+    LineElement,
+    Title,
+    Tooltip,
+    Filler,
+    Legend,
+} from 'chart.js';
+import { Line } from 'react-chartjs-2';
+
+const { faker } = require('@faker-js/faker');
+  
+ChartJS.register(
+    CategoryScale,
+    LinearScale,
+    PointElement,
+    LineElement,
+    Title,
+    Tooltip,
+    Filler,
+    Legend
+);
+
+export const options = {
+responsive: true,
+plugins: {
+    legend: {
+    position: 'top',
+    },
+    title: {
+    display: true,
+    text: 'Chart.js Line Chart',
+    },
+},
+};
+
+const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+
+export const data = {
+labels,
+datasets: [
+    {
+    fill: true,
+    label: 'Dataset 2',
+    data: labels.map(() => faker.datatype.number({ min: 0, max: 1000 })),
+    borderColor: 'rgb(53, 162, 235)',
+    backgroundColor: 'rgba(53, 162, 235, 0.5)',
+    },
+],
+};  
+
+
+
+
 
 export const Home = () => {
+
+    
 
     return (
         <>
@@ -36,6 +95,24 @@ export const Home = () => {
 
                 </div>
             </div>
+
+            <div style={{display: "flex", width: "1000px", height: "700px", padding: "24px"}}>
+                {/* <Line options={options} data={data} /> */}
+            </div>
+
+            {/* <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">Area Chart</h6>
+                </div>
+                <div class="card-body">
+                    <div class="chart-area">
+                        <canvas id="myAreaChart"></canvas>
+                    </div>
+                    
+                    Styling for the area chart can be found in the
+                    <code>/js/demo/chart-area-demo.js</code> file.
+                </div>
+            </div> */}
         </>
     )
 }

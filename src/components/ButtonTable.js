@@ -1,6 +1,17 @@
 import '../assets/styles/css/buttonTable.css';
 
-export const ButtonTable = ({type, href = "#"}) => {
+export const ButtonTable = ({ type, href = "#", onBtnClick }) => {
+    
+    // const handleClick = () => {
+    //     switch (type) {
+    //         case "create": break
+    //         case "read": break
+    //         case "update": break
+    //         case "delete": 
+    //         case "statistics": 
+    //         default: break
+    //     }
+    // }
 
     const handleButton = () => {
         let path = "1"
@@ -13,7 +24,7 @@ export const ButtonTable = ({type, href = "#"}) => {
             default: break
         }
 
-        return <a href={href} className={"button-table " + type}>
+        return <a href={href} className={"button-table " + type} onClick={onBtnClick}>
                     <span>
                         <svg viewBox="0 0 24 24" width="16" height="16" className="inline-block">
                             <path d={path} />

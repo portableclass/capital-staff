@@ -4,17 +4,8 @@
   "private": true,
   "homepage": "https://portableclass.github.io/capital-staff",
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "bootstrap": "^5.2.1",
     "react": "^18.2.0",
-    "react-bootstrap": "^2.5.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.4.1",
-    "react-scripts": "5.0.1",
-    "react-table": "^7.8.0",
-    "web-vitals": "^2.1.4"
+    "react-dom": "^18.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -43,6 +34,18 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^4.0.0"
+    "@faker-js/faker": "^7.5.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "bootstrap": "^5.2.1",
+    "chart.js": "^3.9.1",
+    "gh-pages": "^4.0.0",
+    "react-bootstrap": "^2.5.0",
+    "react-chartjs-2": "^4.3.1",
+    "react-router-dom": "^6.4.1",
+    "react-scripts": "5.0.1",
+    "react-table": "^7.8.0",
+    "web-vitals": "^2.1.4"
   }
 }

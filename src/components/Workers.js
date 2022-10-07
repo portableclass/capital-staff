@@ -1,6 +1,7 @@
 import Header from "./Header"
 import Table from "./Table";
 import React from 'react';
+import { useState, useEffect, useMemo } from 'react';
 
 export const Workers = () => {
 
@@ -28,7 +29,7 @@ export const Workers = () => {
         ], []
     )
 
-    const data = React.useMemo(() => [
+    const sourceData = React.useMemo(() => [
         {
             id: 10,
             name: "Сергеев Сергей",
@@ -73,15 +74,19 @@ export const Workers = () => {
         },
     ], [])
 
+    const [data, setData] = useState(sourceData)
+
     const buttons = [
         "read",
         "delete"
     ]
 
+    const [windowName, setWindowName] = useState("Список")
+
     return (
         <>
             <div style={{display: "flex"}}>
-                <Header title={"Сотрудники"} />
+                <Header title={"Сотрудники"} window={windowName} />
             </div>
 
             <Table
@@ -90,6 +95,8 @@ export const Workers = () => {
                 buttons = {buttons}
                 title = "Сотрудники"
                 pathSvg = "M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z"
+                onDataChange={setData}
+                onModeChange={setWindowName}
             />
         </>
     )
