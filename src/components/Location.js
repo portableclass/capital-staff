@@ -58,6 +58,8 @@ export const Location = () => {
         "delete"
     ]
 
+    const temp = 1
+
     const [windowName, setWindowName] = useState("Список")
 
     return (

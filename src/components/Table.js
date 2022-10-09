@@ -14,6 +14,7 @@ export default function Table({ columns, data,
     onDataChange,
     onModeChange
 }) {
+    const mediaQuery = window.matchMedia('(min-width: 1024px)');
     // const [data, setData] = useState(sourceData)
     // const data = sourceData
     const mode = { table: "table", update: "update", create: "create" };
@@ -30,14 +31,15 @@ export default function Table({ columns, data,
 
     const [selectedRow, setSelectedRow] = useState([])
     const handleRowUpdate = (value) => {
-        onDataChange(data.filter(item => item = item === selectedRow.original ? value : item))
+        onDataChange(data.filter(item => item = item === selectedRow.original ? value : item).Array)
     }
     const handleRowCreate = (value) => {
         
     }
     // const selectedRow = null
 
-    const onButtonAction = (btn) => {
+    const onButtonAction = (btn, row) => {
+        setSelectedRow(row)
         switch (btn) {
             case "create": handleTableMode(mode.create); break
             case "read": break
@@ -65,7 +67,6 @@ export default function Table({ columns, data,
         e => (currentPage * rowsDisplayed) - rowsDisplayed <= e.index && e.index < currentPage * rowsDisplayed
     )
 
-
     // const [tableVisibility, setTableVisibility] = useState(true)
 
     return (
@@ -85,45 +86,80 @@ export default function Table({ columns, data,
                             <ButtonTable type="create" onBtnClick={onButtonAction.bind(null, "create")} />
                         </div>
                     </div>
-                    <table className="table" {...getTableProps()}>
-                        <thead>
-                            {headerGroups.map(headerGroup => (
-                                <tr {...headerGroup.getHeaderGroupProps()} key={headerGroup.id}>
-                                    {headerGroup.headers.map(column => (
-                                        <th {...column.getHeaderProps()}>
-                                            {column.render('Header')}
-                                        </th>
-                                    ))}
-                                    <th />
-                                </tr>
-                            ))}
-                        </thead>
-                        <tbody {...getTableBodyProps()}>
+                    {mediaQuery.matches &&
+                        <table className="table" {...getTableProps()}>
+                            <thead>
+                                {headerGroups.map(headerGroup => (
+                                    <tr {...headerGroup.getHeaderGroupProps()} key={headerGroup.id}>
+                                        {headerGroup.headers.map(column => (
+                                            <th {...column.getHeaderProps()}>
+                                                {column.render('Header')}
+                                            </th>
+                                        ))}
+                                        <th />
+                                    </tr>
+                                ))}
+                            </thead>
+                            <tbody {...getTableBodyProps()}>
                             {tempRows.map(row => {
                                 prepareRow(row)
                                 return (
                                     <tr {...row.getRowProps()} key={row.id} onClick={() => setSelectedRow(row)}>
                                         {row.cells.map(cell => {
                                             return  <td {...cell.getCellProps()}>
-                                                       {cell.render("Cell")}
+                                                    {cell.render('Cell')}
                                                     </td>
                                         })}
 
                                         <td>
                                             <div className="actions-wrapper">
                                                 {buttons.map(btn => {
-                                                    return <ButtonTable type={btn} href={"#row" + row.id} onBtnClick={onButtonAction.bind(null, btn)} />
+                                                    return <ButtonTable type={btn} href={"#row" + row.id} onBtnClick={onButtonAction.bind(null, btn, row)} />
                                                 })}
                                             </div>
                                         </td>
-                                    </tr>
+                                    </tr> 
                                 )
                             })}
-                        </tbody>
-                    </table>
+                            </tbody>
+                        </table>
+                    } 
+                    {!mediaQuery.matches &&
+                        <table className="table" {...getTableProps()}>
+                             <tbody {...getTableBodyProps()}>
+                                {tempRows.map(row => {
+                                    prepareRow(row)
+                                    return (
+                                        <div {...row.getRowProps()} onClick={() => setSelectedRow(row)} style={{borderBottom: "5px solid #e5e7eb", marginTop: "5px"}}>
+                                            {row.cells.map(cell => {
+                                                return <tr style={{display: "flex", justifyContent: "space-between"}}>
+                                                            <td {...cell.column.getHeaderProps()} style={{display:"flex", fontFamily: "TTHoves-DemiBold", alignItems: "center"}}>
+                                                                {cell.column.render('Header')}
+                                                            </td>
+                                                            <td {...cell.getCellProps()} style={{display:"flex", alignItems: "center"}}>
+                                                                {cell.render('Cell')}
+                                                            </td>
+                                                        </tr>
+                                            })}
+                                            <tr style={{display: "flex", alignItems: 'center', padding: "0"}}>
+                                                <td>
+                                                    <div className="actions-wrapper" style={{float: "left"}}>
+                                                        {buttons.map(btn => {
+                                                            return <ButtonTable type={btn} href={"#row" + row.id} onBtnClick={onButtonAction.bind(null, btn)} />
+                                                        })}
+                                                    </div>
+                                                </td>
+                                                <td> </td>
+                                            </tr>
+                                        </div> 
+                                    )
+                                })}
+                            </tbody>
+                        </table>
+                    } 
                     <div className="pagination-wrapper">
                         <div className="page-switch">
-                            {/* {console.log(rows.at(-1))} */}
+                            {/* {console.log(selectedRow.cells[0].column.Header)} */}
                             {/* {console.log(Array.from({ length: columns.length },   () => columns.map(item => item.accessor )     ))} */}
                             {
                                 Array.from({ length: pagesCount >= 1 ? pagesCount : 1 }, (_, index) => index + 1)
