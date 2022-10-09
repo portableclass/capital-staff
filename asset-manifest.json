@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/capital-staff/static/css/main.65d4da33.css",
-    "main.js": "/capital-staff/static/js/main.26b4973f.js",
+    "main.css": "/capital-staff/static/css/main.4f40680a.css",
+    "main.js": "/capital-staff/static/js/main.8ede2276.js",
     "static/js/787.d325f055.chunk.js": "/capital-staff/static/js/787.d325f055.chunk.js",
     "static/media/mascota.svg": "/capital-staff/static/media/mascota.584aa7ff08d56e8a92bb.svg",
     "static/media/TTHoves-ThinItalic.ttf": "/capital-staff/static/media/TTHoves-ThinItalic.556f5311323cce5f243c.ttf",
@@ -25,12 +25,12 @@
     "static/media/TTHoves-Hairline.ttf": "/capital-staff/static/media/TTHoves-Hairline.44dca945d1420c196b8f.ttf",
     "static/media/TTHoves-Black.ttf": "/capital-staff/static/media/TTHoves-Black.119920189c5db1ca7389.ttf",
     "index.html": "/capital-staff/index.html",
-    "main.65d4da33.css.map": "/capital-staff/static/css/main.65d4da33.css.map",
-    "main.26b4973f.js.map": "/capital-staff/static/js/main.26b4973f.js.map",
+    "main.4f40680a.css.map": "/capital-staff/static/css/main.4f40680a.css.map",
+    "main.8ede2276.js.map": "/capital-staff/static/js/main.8ede2276.js.map",
     "787.d325f055.chunk.js.map": "/capital-staff/static/js/787.d325f055.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.65d4da33.css",
-    "static/js/main.26b4973f.js"
+    "static/css/main.4f40680a.css",
+    "static/js/main.8ede2276.js"
   ]
 }
