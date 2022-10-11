@@ -18,19 +18,33 @@
     flex-direction: column;
     width: 100%;
     height: 100%;
-    div h1 {
+    .brand {
         display: flex;
         align-items: center;
         height: 56px;
         padding: 12px;
         color: $white;
-        background-color: $backgroundBrandBlue;
         font-size: 16px;
         font-family: 'TTHoves-Bold';
         margin: 0px;
     }
     a {
         color: unset;
+    }
+}
+
+.brand-wrapper {
+    display: inline-flex;
+    position: relative;
+    width: 100%;
+    background-color: $backgroundBrandBlue;
+    align-items: center;
+}
+
+.nav-burger {
+    display: flex;
+    svg {
+        fill: $white;
     }
 }
 

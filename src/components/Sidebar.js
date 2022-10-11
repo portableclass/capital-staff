@@ -1,12 +1,17 @@
 // import { Navbar, Nav, NavbarBrand } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import '../assets/styles/css/sidebar.css';
-import React, { useState } from 'react';
-import Button from 'react-bootstrap/Button';
-import Offcanvas from 'react-bootstrap/Offcanvas';
+import { useState} from 'react';
 
 export default function Sidebar() {
-    const [showSidebar, setShowSidebar] = useState(true);
+
+    const mediaQuery = window.matchMedia('(min-width: 1024px)');
+
+    const [navVisibility, setNavVisibility] = useState('block')
+    const toggleNavVisibility = () => {
+        navVisibility === 'block' ? setNavVisibility('none') : setNavVisibility('block')
+    }
+
     return (
         <>
             {/* {
@@ -25,8 +30,17 @@ export default function Sidebar() {
                         <Link to="/capital-staff">
                             <h1 className="brand">Капитал Кадры</h1>
                         </Link>
+                        {!mediaQuery.matches &&
+                            <a className="nav-burger" onClick={toggleNavVisibility}>
+                                <svg viewBox="0 0 16 16" width="16" height="16">
+                                    <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z" />
+                                    <path d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+                                    <path d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+                                </svg>
+                            </a>
+                        }
                     </div>
-                    <div className="navigation-wrapper">
+                    <div className="navigation-wrapper" style={{display: `${navVisibility}`}} >
                         <div className="separating-topics">Система доступа</div>
 
                         <div className="link-wrapper">
@@ -76,7 +90,7 @@ export default function Sidebar() {
                         <div className="separating-topics">Администрирование</div>
 
                         <div className="link-wrapper">
-                            <Link to="/capital-staff/users" className="link" style={{paddingBottom: "12px"}}>
+                            <Link to="/capital-staff/users" className="link" style={{paddingBottom: '12px'}}>
                                 <svg viewBox="0 0 24 24" width="16" height="16" className="inline-block">
                                     <path d="M13.07 10.41A5 5 0 0 0 13.07 4.59A3.39 3.39 0 0 1 15 4A3.5 3.5 0 0 1 15 11A3.39 3.39 0 0 1 13.07 10.41M5.5 7.5A3.5 3.5 0 1 1 9 11A3.5 3.5 0 0 1 5.5 7.5M7.5 7.5A1.5 1.5 0 1 0 9 6A1.5 1.5 0 0 0 7.5 7.5M16 17V19H2V17S2 13 9 13 16 17 16 17M14 17C13.86 16.22 12.67 15 9 15S4.07 16.31 4 17M15.95 13A5.32 5.32 0 0 1 18 17V19H22V17S22 13.37 15.94 13Z"></path>
                                 </svg>

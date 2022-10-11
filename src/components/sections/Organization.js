@@ -1,29 +1,31 @@
-import Header from "./Header";
-import Table from "./Table";
 import React from 'react';
+
 import { useState, useEffect, useMemo } from 'react';
+
+import Header from '../Header';
+import Table from './../table/Table';
 
 export const Organization = () => {
 
     const columns = React.useMemo(
         () => [
             
-                {
-                    Header: 'Id',
-                    accessor: 'id'
-                },
-                {
-                    Header: 'Наименование',
-                    accessor: 'name'
-                },
-                {
-                    Header: 'Город',
-                    accessor: 'city'
-                },
-                {
-                    Header: 'Создано',
-                    accessor: 'created'
-                }
+            {
+                Header: 'Id',
+                accessor: 'id',
+            },
+            {
+                Header: 'Наименование',
+                accessor: 'name',
+            },
+            {
+                Header: 'Город',
+                accessor: 'city',
+            },
+            {
+                Header: 'Создано',
+                accessor: 'created',
+            }
             ,
 
         ], []
@@ -53,62 +55,62 @@ export const Organization = () => {
     // )
 
     const sourceData = useMemo(() => [
-    {
-        id: 1,
-        name: "Главстрой",
-    },
-    {
-        id: 2,
-        name: "Капитал кадры",
-    },
-    {
-        id: 3,
-        name: "Капитал кадры",
-    },
-    {
-        id: 4,
-        name: "Капитал кадрыКапитал кадрыКапитал кадрыКапитал кадры",
-    },
-    {
-        id: 5,
-        name: "Капитал кадры",
-    },
-    {
-        id: 6,
-        name: "Капитал кадры",
-    },
-    {
-        id: 7,
-        name: "Капитал кадры",
-    },
-    {
-        id: 8,
-        name: "Капитал кадры",
-    },
-    {
-        id: 9,
-        name: "Капитал кадры",
-    },
-    {
-        id: 10,
-        name: "Капитал кадры",
-    },
-    {
-        id: 11,
-        name: "Капитал кадры",
-    },
-    {
-        id: 12,
-        name: "Капитал кадры",
-    },
-    {
-        id: 13,
-        name: "Капитал кадры",
-    },
-    {
-        id: 14,
-        name: "Капитал кадры",
-    },
+        {
+            id: 1,
+            name: 'Главстрой',
+        },
+        {
+            id: 2,
+            name: 'Капитал кадры',
+        },
+        {
+            id: 3,
+            name: 'Капитал кадры',
+        },
+        {
+            id: 4,
+            name: 'Капитал кадрыКапитал кадрыКапитал кадрыКапитал кадры',
+        },
+        {
+            id: 5,
+            name: 'Капитал кадры',
+        },
+        {
+            id: 6,
+            name: 'Капитал кадры',
+        },
+        {
+            id: 7,
+            name: 'Капитал кадры',
+        },
+        {
+            id: 8,
+            name: 'Капитал кадры',
+        },
+        {
+            id: 9,
+            name: 'Капитал кадры',
+        },
+        {
+            id: 10,
+            name: 'Капитал кадры',
+        },
+        {
+            id: 11,
+            name: 'Капитал кадры',
+        },
+        {
+            id: 12,
+            name: 'Капитал кадры',
+        },
+        {
+            id: 13,
+            name: 'Капитал кадры',
+        },
+        {
+            id: 14,
+            name: 'Капитал кадры',
+        },
     // {
     //     id: 20,
     //     name: "Капитал кадры",
@@ -176,16 +178,16 @@ export const Organization = () => {
     const [data, setData] = useState(sourceData)
 
     const buttons = [
-        "statistics",
-        "update",
-        "delete"
+        'statistics',
+        'update',
+        'delete',
     ]
 
-    const [windowName, setWindowName] = useState("Список")
+    const [windowName, setWindowName] = useState('Список')
 
     return (
         <>
-            <Header title={"Организация"} window={windowName} />
+            <Header title={'Организация'} window={windowName} />
 
             <Table
                 columns={columns}

@@ -1,7 +1,9 @@
-import Header from "./Header"
-import Table from "./Table";
 import React from 'react';
+
 import { useState, useEffect, useMemo } from 'react';
+
+import Header from '../Header'
+import Table from './../table/Table';
 
 export const Workplace = () => {
 
@@ -10,20 +12,20 @@ export const Workplace = () => {
             
             {
                 Header: 'USERID',
-                accessor: 'userId'
+                accessor: 'userId',
             },
             {
                 Header: 'ID',
-                accessor: 'id'
+                accessor: 'id',
             },
             {
                 Header: 'TITLE',
-                accessor: 'title'
+                accessor: 'title',
             },
             {
                 Header: 'COMPLETED',
-                accessor: 'completed'
-            }
+                accessor: 'completed',
+            },
 
         ], []
     )
@@ -32,27 +34,27 @@ export const Workplace = () => {
         //{id: 1, completed: false, title: 'play videogames'}, 
         //{id: 2, completed: true, title: 'find a job'}, 
         //{id: 3, completed: false, title: 'to die in agony'} 
-        ]) 
+    ]) 
  
     useEffect(() => { 
         fetch('https://jsonplaceholder.typicode.com/todos?_limit=29') 
-        .then(response => response.json()) 
-        .then(data => { 
-            setData(data); 
-        }) 
+            .then(response => response.json()) 
+            .then(data => { 
+                setData(data); 
+            }) 
     }, []) 
 
     const buttons = [
-        "statistics",
-        "update",
-        "delete"
+        'statistics',
+        'update',
+        'delete',
     ]
 
-    const [windowName, setWindowName] = useState("Список")
+    const [windowName, setWindowName] = useState('Список')
 
     return (
         <>
-            <Header title={"Рабочее место"} window={windowName} />
+            <Header title={'Рабочее место'} window={windowName} />
 
             <Table
                 columns={columns}

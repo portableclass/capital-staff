@@ -1,7 +1,9 @@
-import Header from "./Header"
-import Table from "./Table";
 import React from 'react';
+
 import { useState, useEffect, useMemo } from 'react';
+
+import Header from '../Header'
+import Table from './../table/Table';
 
 
 export const Users = () => {
@@ -9,22 +11,22 @@ export const Users = () => {
     const columns = React.useMemo(
         () => [
             
-                {
-                    Header: 'Id',
-                    accessor: 'id'
-                },
-                {
-                    Header: 'Username',
-                    accessor: 'username'
-                },
-                {
-                    Header: 'Имя',
-                    accessor: 'name'
-                },
-                {
-                    Header: 'Фамилия',
-                    accessor: 'surname'
-                }
+            {
+                Header: 'Id',
+                accessor: 'id',
+            },
+            {
+                Header: 'Username',
+                accessor: 'username',
+            },
+            {
+                Header: 'Имя',
+                accessor: 'name',
+            },
+            {
+                Header: 'Фамилия',
+                accessor: 'surname',
+            }
             ,
 
         ], []
@@ -33,25 +35,25 @@ export const Users = () => {
     const sourceData = React.useMemo(() => [
         {
             id: 0,
-            username: "root",
-            name: "Сергей",
-            surname: "Сергеев"
+            username: 'root',
+            name: 'Сергей',
+            surname: 'Сергеев',
         },
     ], [])
 
     const [data, setData] = useState(sourceData)
 
     const buttons = [
-        "read",
-        "delete"
+        'read',
+        'delete',
     ]
 
-    const [windowName, setWindowName] = useState("Список")
+    const [windowName, setWindowName] = useState('Список')
 
     return (
         <>
-            <div style={{display: "flex"}}>
-                <Header title={"Пользователи"} window={windowName}/>
+            <div style={{display: 'flex'}}>
+                <Header title={'Пользователи'} window={windowName}/>
             </div>
 
             <Table
