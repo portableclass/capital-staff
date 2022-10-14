@@ -90,7 +90,10 @@ export default function Table({ columns, data,
                         <table className="table" {...getTableProps()}>
                             <thead>
                                 {headerGroups.map(headerGroup => (
-                                    <tr {...headerGroup.getHeaderGroupProps()} key={headerGroup.getHeaderGroupProps().key}>
+                                    <tr
+                                        {...headerGroup.getHeaderGroupProps()}
+                                        key={headerGroup.getHeaderGroupProps().key}
+                                    >
                                         {headerGroup.headers.map(column => (
                                             <th {...column.getHeaderProps()}>
                                                 {column.render('Header')}
@@ -104,9 +107,16 @@ export default function Table({ columns, data,
                                 {tempRows.map(row => {
                                     prepareRow(row)
                                     return (
-                                        <tr {...row.getRowProps()} key={row.getRowProps().key} onClick={() => setSelectedRow(row)}>
+                                        <tr
+                                            {...row.getRowProps()}
+                                            key={row.getRowProps().key}
+                                            onClick={() => setSelectedRow(row)}
+                                        >
                                             {row.cells.map(cell => {
-                                                return  <td {...cell.getCellProps()} key={cell.getCellProps().key}>
+                                                return <td
+                                                    {...cell.getCellProps()}
+                                                    key={cell.getCellProps().key}
+                                                >
                                                     {cell.render('Cell')}
                                                 </td>
                                             })}
@@ -114,7 +124,12 @@ export default function Table({ columns, data,
                                             <td>
                                                 <div className="actions-wrapper">
                                                     {buttons.map(btn => {
-                                                        return <ButtonTable type={btn} href={'#row' + row.id} onBtnClick={onButtonAction.bind(null, btn, row)} key={row.getRowProps().key + btn}/>
+                                                        return <ButtonTable
+                                                            type={btn}
+                                                            href={'#row' + row.id}
+                                                            onBtnClick={onButtonAction.bind(null, btn, row)}
+                                                            key={row.getRowProps().key + btn}
+                                                        />
                                                     })}
                                                 </div>
                                             </td>
@@ -126,58 +141,69 @@ export default function Table({ columns, data,
                     } 
                     {!mediaQuery.matches &&
                         <table className="table" {...getTableProps()}>
-                            <tbody {...getTableBodyProps()}>
-                                {tempRows.map(row => {
-                                    prepareRow(row)
-                                    return (
-                                        <div {...row.getRowProps()} onClick={() => setSelectedRow(row)} style={{borderBottom: '5px solid #e5e7eb', marginTop: '5px'}}>
-                                            {row.cells.map(cell => {
-                                                return <tr style={{display: 'flex', justifyContent: 'space-between'}}>
-                                                    <td {...cell.column.getHeaderProps()} style={{display:'flex', fontFamily: 'TTHoves-DemiBold', alignItems: 'center'}} key={cell.getCellProps().key}>
-                                                        {cell.column.render('Header')}
-                                                    </td>
-                                                    <td {...cell.getCellProps()} style={{display:'flex', alignItems: 'center'}} key={cell.getCellProps().key}>
-                                                        {cell.render('Cell')}
-                                                    </td>
-                                                </tr>
-                                            })}
-                                            <tr style={{display: 'flex', alignItems: 'center', padding: '0'}}>
-                                                <td>
-                                                    <div className="actions-wrapper" style={{float: 'left'}}>
-                                                        {buttons.map(btn => {
-                                                            return <ButtonTable type={btn} href={'#row' + row.id} onBtnClick={onButtonAction.bind(null, btn)} />
-                                                        })}
-                                                    </div>
+                            {tempRows.map(row => {
+                                prepareRow(row)
+                                return (
+                                    <tbody
+                                        {...row.getRowProps()}
+                                        onClick={() => setSelectedRow(row)}
+                                        style={{ borderBottom: '3px solid #b3f2db', marginTop: '5px' }}
+                                    >
+                                        {row.cells.map(cell => {
+                                            return <tr
+                                                style={{ display: 'flex', justifyContent: 'space-between' }}
+                                                key={row.getRowProps().key + cell.getCellProps().key}
+                                            >
+                                                <td
+                                                    {...cell.column.getHeaderProps()}
+                                                    style={{ display: 'flex', fontFamily: 'TTHoves-DemiBold', alignItems: 'center' }}
+                                                    key={row.getRowProps().key + cell.column.render('Header')}
+                                                >
+                                                    {cell.column.render('Header')}
                                                 </td>
-                                                <td> </td>
+                                                <td
+                                                    {...cell.getCellProps()}
+                                                    style={{ display: 'flex', alignItems: 'center' }}
+                                                    key={row.getRowProps().key + cell.render('Cell')}
+                                                >
+                                                    {cell.render('Cell')}
+                                                </td>
                                             </tr>
-                                        </div> 
-                                    )
-                                })}
-                            </tbody>
+                                        })}
+                                        <tr style={{display: 'flex', alignItems: 'center', padding: '0'}}>
+                                            <td>
+                                                <div className="actions-wrapper" style={{float: 'left'}}>
+                                                    {buttons.map(btn => {
+                                                        return <ButtonTable
+                                                            type={btn}
+                                                            href={'#row' + row.id}
+                                                            onBtnClick={onButtonAction.bind(null, btn)}
+                                                            key={row.getRowProps().key + btn}
+                                                        />
+                                                    })}
+                                                </div>
+                                            </td>
+                                            <td> </td>
+                                        </tr>
+                                    </tbody> 
+                                )
+                            })}
                         </table>
                     } 
                     <div className="pagination-wrapper">
                         <div className="page-switch">
-                            {/* {console.log(selectedRow.cells[0].column.Header)} */}
-                            {/* {console.log(Array.from({ length: columns.length },   () => columns.map(item => item.accessor )     ))} */}
                             {
                                 Array.from({ length: pagesCount >= 1 ? pagesCount : 1 }, (_, index) => index + 1)
                                     .map(page => {
-                                        if (page === currentPage) {
-                                            return <a href={'#page' + page} onClick={() => setPage(page)} style={{ border: '3px solid black' }} key={page}>
-                                                <span>
-                                                    {page}
-                                                </span>
-                                            </a>
-                                        }
-                                        else {
-                                            return <a href={'#' + page} onClick={() => setPage(page)} style={{ border: '3px solid #f3f4f6' }} key={page}>
-                                                <span>
-                                                    {page}
-                                                </span>
-                                            </a>
-                                        }
+                                        return <a
+                                            href={'#' + page}
+                                            onClick={() => setPage(page)}
+                                            key={page}
+                                            className={page === currentPage ? 'active-action' : 'page-link'}>
+                                            <span>
+                                                {page}
+                                            </span>
+                                        </a>
                                     })
                             }
                         </div>

@@ -10,9 +10,9 @@
     align-items: center;
     align-content: stretch;
     border-style: solid;
-    border-color: $borderGrey;
+    border-color: $border;
     border-bottom-width: 1px;
-    background-color: $white;
+    background: $background;
     z-index: 1;
 }
 
@@ -47,14 +47,14 @@
     display: flex;
     width: 32px;
     height: 32px;
-    background-color: $white;
+    background: $background;
     border-radius: 50%;
     background-image: url('../../img/mascota.svg');
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
     border-style: solid;
-    border-color: $borderGrey;
+    border-color: $border;
     border-width: 2px;
     margin: 0px;
 }
@@ -81,9 +81,9 @@
     display: none;
     position: absolute;
     justify-content: space-around;
-    background-color: $white;
+    background: $background;
     box-shadow: 0 4px 6px -1px rgba(0,0,0,.1), 0 2px 4px -2px rgba(0,0,0,.1);
-    border: 1px solid $borderGrey;
+    border: 1px solid $border;
     z-index: 1;
     a {
         float: none;
@@ -118,7 +118,7 @@
     box-sizing: border-box;
     padding: 20px 24px;
     border-style: solid;
-    border-color: $borderGrey;
+    border-color: $border;
     border-left-width: 1px;
     svg {
         fill: $black;

@@ -1,156 +1,11 @@
 @import "default";
 
-// .table-wrapper {
-//     display: flex;
-//     position: relative;
-//     width: 100%;
-//     padding: 0px 24px 24px 24px;
-//     background-color: #FAFAFA;  
-// }
-
-// table {
-//     display: flex;
-//     position: relative;
-//     flex-wrap: wrap;
-//     flex-direction: column;
-//     width: 100%;
-//     border: 1px solid rgb(243, 244, 246);
-//     border-width: 1px;
-//     background-color: white;
-// }
-    
-// tbody {
-//     display: flex;
-//     position: relative;
-//     flex-wrap: wrap;
-//     flex-direction: column;
-//     width: 100%;
-//     tr {
-//         background-color: #FAFAFA;
-//         &:hover {
-//             background-color: #ebeaea;
-//         }
-//         &:nth-child(2n) {
-//             background-color: white;
-//             &:hover {
-//                 background-color: #ebeaea;
-//             }
-//         }
-
-//     }
-// }
-    
-// th {
-//     display: flex;
-//     position: relative;
-//     flex-wrap: wrap;
-//     flex-direction: row;
-//     width: 100%;
-//     text-align: left;
-//     padding: 2px 4px;
-//     font-family: 'TTHoves-DemiBold', sans-serif;
-//     font-size: 16px;
-//     padding: 8px 12px;
-
-// }
-
-// tr {
-//     display: flex;
-//     height: 50px;
-//     text-align: center;
-//     vertical-align: middle;
-//     align-items: center;
-//     border-bottom: 1px solid rgb(243, 244, 246);
-// }
-
-// td {
-//     display: flex;
-//     position: relative;
-//     flex-wrap: wrap;
-//     width: 100%;
-//     font-family: 'TTHoves-Regular', sans-serif;
-//     font-size: 16px;
-//     padding: 8px 12px;
-// }
-
-// .actions-wrapper {
-//     display: flex;
-//     float: right;
-//     position: relative;
-//     text-align: center;
-//     vertical-align: middle;
-//     align-items: center;
-//     justify-content: center;
-//     padding: 4px;
-// }
-
-// .page-wrapper {
-//     display: flex;
-//     float: right;
-//     position: relative;
-//     text-align: center;
-//     vertical-align: middle;
-//     align-items: center;
-//     justify-content: center;
-//     padding: 4px;
-//     a {
-//         display: flex;
-//         height: 34px;
-//         width: 34px;
-//         position: relative;
-//         justify-content: center;
-//         margin-right: 12px;
-//         border-radius: 0.25rem;
-//         cursor: pointer;
-//         &:hover {
-//             background-color: #ebeaea;
-//         }
-//         span {
-//             display: flex;
-//             position: relative;
-//             align-items: center;
-//         }
-//     }
-// }
-
-// .table-ico {
-//     display: flex;
-//     height: 34px;
-//     position: relative;
-//     text-align: center;
-//     vertical-align: middle;
-//     align-items: center;
-//     justify-content: center;
-//     margin-left: 12px;
-// }
-
-// .action-add {
-//     display: flex;
-//     height: 34px;
-//     width: 34px;
-//     position: relative;
-//     text-align: center;
-//     vertical-align: middle;
-//     align-items: center;
-//     justify-content: center;
-//     margin-right: 16px;
-//     border: 3px solid black;
-//     border-radius: 0.25rem;
-//     cursor: pointer;
-//     &:hover {
-//         background-color: #ebeaea;
-//     }
-// }
-
-
-
-
 .table-wrapper {
     padding: 0px 24px 24px 24px;
-    background-color: $backgroundGrey; 
+    background: $background-2; 
     table {
-        border: 1px solid $borderGrey;
-        background-color: $white;
+        border: 1px solid $border;
+        background: $background;
         margin-bottom: 0;
         thead {
             th {
@@ -163,14 +18,14 @@
         
         tbody {
             tr {
-                background-color: $backgroundGrey;
+                background: $background-2;
                 &:hover {
-                    background-color: $backgroundGreyHover;
+                    background: $whiteHover;
                 }
                 &:nth-child(2n) {
-                    background-color: $white;
+                    background: $background;
                     &:hover {
-                        background-color: $backgroundGreyHover;
+                        background: $whiteHover;
                     }
                 }
             }
@@ -178,7 +33,7 @@
         tr {
             width: 100%;
             min-height: 50px;
-            border-bottom: 1px solid $borderGrey;
+            border-bottom: 1px solid $border;
         }
         td {
             vertical-align: middle;
@@ -186,94 +41,9 @@
             font-size: 16px;
             padding: 8px 12px;
             min-height: 50px;
-            border-bottom: 0px solid $borderGrey;
         }
     }
 }
-
-.actions-wrapper {
-    display: flex;
-    float: right;
-    position: relative;
-    align-items: center;
-}
-
-.pagination-wrapper {
-    display: inline-flex;
-    position: relative;
-    min-height: 50px;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    background-color: $white;
-}
-
-.page-switch {
-    display: flex;
-    position: relative;
-    flex-wrap: wrap;
-    width: 100%;
-    margin-left: 12px;
-    a {
-        display: flex;
-        height: 34px;
-        width: 34px;
-        position: relative;
-        justify-content: center;
-        margin: 6px 6px 6px 0px;
-        border-radius: 0.25rem;
-        cursor: pointer;
-        text-decoration: none;
-        &:hover {
-            background-color: $backgroundGreyHover;
-        }
-        span {
-            display: flex;
-            position: relative;
-            align-items: center;
-        }
-    }
-}
-
-.page-info {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    justify-content: flex-end;
-    p {
-        margin: 0px 12px 0px 0px;
-    }
-}
-
-// .page-wrapper {
-//     display: flex;
-//     float: right;
-//     position: relative;
-//     text-align: center;
-//     vertical-align: middle;
-//     align-items: center;
-//     justify-content: center;
-//     padding: 4px;
-    // a {
-    //     display: flex;
-    //     height: 34px;
-    //     width: 34px;
-    //     position: relative;
-    //     justify-content: center;
-    //     margin-right: 12px;
-    //     border-radius: 0.25rem;
-    //     cursor: pointer;
-    //     &:hover {
-    //         background-color: #ebeaea;
-    //     }
-    //     span {
-    //         display: flex;
-    //         position: relative;
-    //         align-items: center;
-    //     }
-    // }
-// }
 
 .table-header-wrapper {
     display: inline-flex;
@@ -282,7 +52,9 @@
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    background-color: $white;
+    background: $background;
+    border: 1px solid $border;
+    border-bottom-width: 0;
 }
 
 .table-header {
@@ -321,10 +93,93 @@
     align-items: center;
     justify-content: center;
     margin-right: 16px;
-    border: 3px solid black;
+    border: 3px solid $border;
     border-radius: 0.25rem;
     cursor: pointer;
+    background: $background-2;
     &:hover {
-        background-color: $backgroundGreyHover;
+        background: $whiteHover;
+    }
+}
+
+.actions-wrapper {
+    display: flex;
+    float: right;
+    position: relative;
+    align-items: center;
+}
+
+.pagination-wrapper {
+    display: inline-flex;
+    position: relative;
+    min-height: 50px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background: $background;
+    border: 1px solid $border;
+    border-top-width: 0;
+}
+
+.active-action {
+    display: flex;
+    height: 34px;
+    width: 34px;
+    position: relative;
+    justify-content: center;
+    margin: 6px 6px 6px 0px;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    text-decoration: none;
+    border: 3px solid $elemGreen;
+    background: $background-2;
+    &:hover {
+        background: $whiteHover;
+    }
+    span {
+        display: flex;
+        position: relative;
+        align-items: center;
+    }
+}
+
+.page-switch {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 12px;
+    .page-link {
+        display: flex;
+        height: 34px;
+        width: 34px;
+        position: relative;
+        justify-content: center;
+        margin: 6px 6px 6px 0px;
+        border-radius: 0.25rem;
+        cursor: pointer;
+        text-decoration: none;
+        border: 3px solid $border;
+        background: $background-2;
+        &:hover {
+            background: $whiteHover;
+            border: 3px solid $border;
+        }
+        span {
+            display: flex;
+            position: relative;
+            align-items: center;
+        }
+    }
+}
+
+.page-info {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    p {
+        margin: 0px 12px 0px 0px;
     }
 }

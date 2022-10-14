@@ -7,23 +7,13 @@ export default function Sidebar() {
 
     const mediaQuery = window.matchMedia('(min-width: 1024px)');
 
-    const [navVisibility, setNavVisibility] = useState('block')
+    const [navVisibility, setNavVisibility] = useState(mediaQuery.matches ? 'block' : 'none')
     const toggleNavVisibility = () => {
         navVisibility === 'block' ? setNavVisibility('none') : setNavVisibility('block')
     }
 
     return (
         <>
-            {/* {
-                <div>
-                    <Button variant="primary" onClick={() => setShowSidebar(true)}>
-                        Launch
-                    </Button>
-
-                    <Offcanvas style={{width: "240px"}} show={showSidebar} onHide={() => setShowSidebar(false)}>
-
-                </div>
-            } */}
             <div className="sidebar-wrapper">
                 <div className="sidebar">
                     <div className="brand-wrapper">

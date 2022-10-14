@@ -1,17 +1,20 @@
 // default white
-$white: #FFF;
+$white: #fff;
 
 // default black
 $black: #000;
 
 // element green
-$elemGreen: #059669;
+$elemGreen: #05a573;
 
-// main background grey
-$backgroundGrey: #FAFAFA;
+// main background
+$background: #f3fdff;
 
-// main background grey hover
-$backgroundGreyHover: #ebeaea;
+// main background
+$background-2: #FFF; 
+
+// main background hover
+$whiteHover: rgb(243, 241, 241);
 
 // sidebar background darkblue
 $backgroundDarkBlue: rgb(31, 41, 55);
@@ -19,8 +22,14 @@ $backgroundDarkBlue: rgb(31, 41, 55);
 // sidebar background darkblue hover
 $backgroundDarkBlueHover: rgb(25, 34, 45);
 
+// sidebar background
+$backgroundSidebar: linear-gradient(90deg, rgba(81,111,165,1) 0%, rgba(48,141,146,1) 100%);
+
+// sidebar background hover
+$backgroundSidebarHover: linear-gradient(90deg, rgb(57, 79, 118) 0%, rgb(29, 87, 90) 100%);
+
 // sidebar brand background
-$backgroundBrandBlue: #111827;
+$backgroundBrand:linear-gradient(90deg, rgb(57, 79, 118) 0%, rgb(29, 87, 90) 100%);
 
 // text grey
 $textGrey: rgb(107, 114, 128);
@@ -32,7 +41,7 @@ $textLightGrey: #9CA3AF;
 $textLightGrey2: #D1D5DB;
 
 // border grey
-$borderGrey: rgb(243, 244, 246);
+$border: #b3f2db;
 
 // button table update
 $btnTableUpdate: #2563EB;
