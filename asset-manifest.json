@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/capital-staff/static/css/main.f75995c3.css",
+    "main.css": "/capital-staff/static/css/main.9fd8f6d8.css",
     "main.js": "/capital-staff/static/js/main.74eda5b6.js",
     "static/js/787.d325f055.chunk.js": "/capital-staff/static/js/787.d325f055.chunk.js",
     "static/media/mascota.svg": "/capital-staff/static/media/mascota.584aa7ff08d56e8a92bb.svg",
@@ -25,12 +25,12 @@
     "static/media/TTHoves-Hairline.ttf": "/capital-staff/static/media/TTHoves-Hairline.44dca945d1420c196b8f.ttf",
     "static/media/TTHoves-Black.ttf": "/capital-staff/static/media/TTHoves-Black.119920189c5db1ca7389.ttf",
     "index.html": "/capital-staff/index.html",
-    "main.f75995c3.css.map": "/capital-staff/static/css/main.f75995c3.css.map",
+    "main.9fd8f6d8.css.map": "/capital-staff/static/css/main.9fd8f6d8.css.map",
     "main.74eda5b6.js.map": "/capital-staff/static/js/main.74eda5b6.js.map",
     "787.d325f055.chunk.js.map": "/capital-staff/static/js/787.d325f055.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f75995c3.css",
+    "static/css/main.9fd8f6d8.css",
     "static/js/main.74eda5b6.js"
   ]
 }
