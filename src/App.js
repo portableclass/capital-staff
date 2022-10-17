@@ -17,10 +17,8 @@ import { Login } from './components/Login';
 
 
 function App() {
-
     return (
         <Router>
-
             <div className="app-wrapper"> 
 
                 <Sidebar />
@@ -42,8 +40,7 @@ function App() {
                     </main>
                 </div>
         
-            </div>   
-          
+            </div>
         </Router>
     );
 }

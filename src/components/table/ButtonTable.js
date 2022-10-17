@@ -1,17 +1,6 @@
 import '../../assets/styles/css/buttonTable.css';
 
 export const ButtonTable = ({ type, href = '#', onBtnClick }) => {
-    
-    // const handleClick = () => {
-    //     switch (type) {
-    //         case "create": break
-    //         case "read": break
-    //         case "update": break
-    //         case "delete": 
-    //         case "statistics": 
-    //         default: break
-    //     }
-    // }
 
     const handleButton = () => {
         let path = '1'

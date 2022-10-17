@@ -1,12 +1,9 @@
 import { useState} from 'react';
 import { useTable } from 'react-table';
-
 import { ButtonTable } from './ButtonTable';
 import LineChart from '../LineChart';
 import CRUDTable from './CRUDTable';
 import '../../assets/styles/css/table.css';
-
-
 
 export default function Table({ columns, data,
     buttons,
@@ -17,8 +14,7 @@ export default function Table({ columns, data,
     onModeChange,
 }) {
     const mediaQuery = window.matchMedia('(min-width: 1024px)');
-    // const [data, setData] = useState(sourceData)
-    // const data = sourceData
+
     const mode = { table: 'table', update: 'update', create: 'create', statistics: "statistics", read: 'read' };
     const [tableMode, setTableMode] = useState(mode.table)
     const handleTableMode = (value) => {
@@ -44,14 +40,6 @@ export default function Table({ columns, data,
         }
     }
 
-    const [selectedRow, setSelectedRow] = useState([])
-    const handleRowUpdate = (value) => {
-        onDataChange(data.filter(item => item = item === selectedRow.original ? value : item).Array)
-    }
-    const handleRowCreate = (value) => {
-        
-    }
-
     const {
         getTableProps,
         getTableBodyProps,
@@ -65,9 +53,17 @@ export default function Table({ columns, data,
 
     const pagesCount = Math.ceil(rows.length / rowsDisplayed)
     const [currentPage, setPage] = useState(1)
+    
     const tempRows = rows.filter(
         e => (currentPage * rowsDisplayed) - rowsDisplayed <= e.index && e.index < currentPage * rowsDisplayed
     )
+    const [selectedRow, setSelectedRow] = useState([])
+    const handleRowUpdate = (value) => {
+        onDataChange(data.filter(item => item = item === selectedRow.original ? value : item).Array)
+    }
+    const handleRowCreate = (value) => {
+        
+    }
 
     return (
         <>
@@ -224,10 +220,19 @@ export default function Table({ columns, data,
                 />
             }
             {tableMode === mode.statistics &&
-                <LineChart
-                    title={`Statistics of ${title}`}
-                    legendTitle={title}
-                />
+                <>
+                    <LineChart
+                        title={`Statistics of ${title}`}
+                        legendTitle={title}
+                    />
+                        <button
+                            type="button"
+                            className="btn-return"
+                            onClick={() => setTableMode(mode.table)}
+                        >
+                        Вернуться
+                        </button>
+                </>                
             }
         </>       
     )

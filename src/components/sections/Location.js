@@ -1,7 +1,5 @@
 import React from 'react';
-
-import { useState, useEffect, useMemo } from 'react';
-
+import { useState } from 'react';
 import Header from '../Header'
 import Table from './../table/Table';
 
@@ -59,8 +57,6 @@ export const Location = () => {
         'update',
         'delete',
     ]
-
-    const temp = 1
 
     const [windowName, setWindowName] = useState('Список')
 

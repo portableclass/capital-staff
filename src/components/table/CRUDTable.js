@@ -4,10 +4,8 @@ import { useState} from 'react';
 export default function CRUDTable({ columns, row, handleUpdate, tableMode, mode, handleCreate }) {
 
     const [tempRow, setTempRow] = useState(row)
-    // const [value, setValue] = useState("")
 
     const handleEdit = (column, event) => {
-        // console.log(event.target.value)
         tempRow[column.accessor] = event.target.value
         setTempRow(tempRow)
     }

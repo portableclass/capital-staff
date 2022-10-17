@@ -21,13 +21,21 @@ ChartJS.register(
     Legend,
 );
 
-
 export default function LineChart({
     title = "Stats",
     legendTitle = "stats",
-    labels = ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange', 'Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-    data = [12, 19, 3, 5, 2, 7, 12, 19, 3, 5, 2, 7] })
+    labels = ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange', 'Red', 'Blue', 'Yellow', 'Green'],
+    data = Array.from({length: 10}, () => Math.floor(Math.random() * 100)) })
 {
+
+    let date = new Date()
+    const temp = new Array(10)
+    for (let i = temp.length - 1; i >= 0; i--) {
+        temp[i] = new Date(+date).toLocaleDateString();
+        date.setDate(date.getDate() - 1);
+    }
+    labels = temp
+
     return (
         <div className="line-chart-wrapper">
             <div className="chart-header">
@@ -69,6 +77,7 @@ export default function LineChart({
                                     borderColor: "#f3f4f6",
                                     tickColor: "#f3f4f6",
                                     tickWidth: 2,
+                                    reverse: true,
                                 },
                             },
                             y: {

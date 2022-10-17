@@ -41,6 +41,7 @@
             font-size: 16px;
             padding: 8px 12px;
             min-height: 50px;
+            border-bottom-width: 0px;
         }
     }
 }
@@ -181,5 +182,22 @@
     justify-content: flex-end;
     p {
         margin: 0px 12px 0px 0px;
+    }
+}
+
+.btn-return {
+    margin: 0px 0px 0px 24px;
+    background-color: $btnTableStatistics;
+    width: 115px;
+    padding: 8px;
+    text-align: center;
+    color: $white;
+    border-radius: 0.25rem;
+    font-size: 16px;
+    font-family: 'TTHoves-Regular';
+    text-decoration: none;
+    &:hover {
+        color: $white;
+        background-color: $btnTableStatistics;
     }
 }

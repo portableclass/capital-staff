@@ -1,13 +1,11 @@
 import React from 'react';
-
-import { useState, useEffect, useMemo } from 'react';
-
+import { useState, useEffect } from 'react';
 import Header from '../Header'
 import Table from './../table/Table';
 
 export const Workplace = () => {
 
-    const columns = useMemo(
+    const columns = React.useMemo(
         () => [
             
             {
@@ -30,11 +28,7 @@ export const Workplace = () => {
         ], []
     )
 
-    const [data, setData] = useState([ 
-        //{id: 1, completed: false, title: 'play videogames'}, 
-        //{id: 2, completed: true, title: 'find a job'}, 
-        //{id: 3, completed: false, title: 'to die in agony'} 
-    ]) 
+    const [data, setData] = useState([]) 
  
     useEffect(() => { 
         fetch('https://jsonplaceholder.typicode.com/todos?_limit=29') 

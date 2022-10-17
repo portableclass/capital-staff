@@ -1,7 +1,5 @@
 import React from 'react';
-
-import { useState, useEffect, useMemo } from 'react';
-
+import { useState } from 'react';
 import Header from '../Header';
 import Table from './../table/Table';
 
@@ -31,30 +29,7 @@ export const Organization = () => {
         ], []
     )
 
-    // const columns = useMemo(
-    //     () => [
-            
-    //         {
-    //             Header: 'юзерайди',
-    //             accessor: 'userId'
-    //         },
-    //         {
-    //             Header: 'айди',
-    //             accessor: 'id'
-    //         },
-    //         {
-    //             Header: 'титл',
-    //             accessor: 'title'
-    //         },
-    //         {
-    //             Header: 'комплитед',
-    //             accessor: 'completed'
-    //         }
-
-    //     ], []
-    // )
-
-    const sourceData = useMemo(() => [
+    const sourceData = React.useMemo(() => [
         {
             id: 1,
             name: 'Главстрой',
@@ -160,20 +135,6 @@ export const Organization = () => {
     //     name: "Капитал кадры",
     // },
     ], [])
-
-    // const [data, setData] = useState([ 
-    //     //{id: 1, completed: false, title: 'play videogames'}, 
-    //     //{id: 2, completed: true, title: 'find a job'}, 
-    //     //{id: 3, completed: false, title: 'to die in agony'} 
-    //     ]) 
- 
-    // useEffect(() => { 
-    //     fetch('https://jsonplaceholder.typicode.com/todos?_limit=29') 
-    //     .then(response => response.json()) 
-    //     .then(data => { 
-    //         setData(data); 
-    //     }) 
-    // }, []) 
     
     const [data, setData] = useState(sourceData)
 
