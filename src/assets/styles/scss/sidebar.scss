@@ -1,0 +1,84 @@
+@import "default";
+
+
+.sidebar-wrapper {
+    display: flex;
+    position: relative;
+    min-width: 240px;
+    min-height: 100vh;
+    // background: linear-gradient(90deg, rgba(37, 39, 121, 1) 0%, rgba(21,20,60,1) 100%);
+    // background: linear-gradient(90deg, rgba(81,111,165,1) 0%, rgba(48,141,146,1) 100%);
+    background: $backgroundSidebar;
+}
+
+.sidebar {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    .brand {
+        display: flex;
+        align-items: center;
+        height: 56px;
+        padding: 12px;
+        color: $white;
+        font-size: 16px;
+        font-family: 'TTHoves-Bold';
+        margin: 0px;
+        text-decoration: none;
+    }
+    a {
+        color: unset;
+        text-decoration: none;
+    }
+}
+
+.brand-wrapper {
+    display: inline-flex;
+    position: relative;
+    width: 100%;
+    background: $backgroundBrand;
+    align-items: center;
+}
+
+.nav-burger {
+    display: flex;
+    svg {
+        fill: $white;
+    }
+}
+
+.separating-topics {
+    padding: 12px;
+    align-items: center;
+    width: 100%;
+    color: $white;
+    font-family: 'TTHoves-Regular', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.link {
+    display: inline-flex;
+    padding: 8px 12px;
+    align-items: center;
+    width: 100%;
+    color: unset;
+    text-decoration: none;
+    svg {
+        fill: $white;
+    }
+    p {
+        font-size: 16px;
+        font-family: 'TTHoves-Regular', sans-serif;
+        color: $white;
+        margin: 0px 0px 0px 12px;
+        text-decoration: none;
+    }
+    &:hover {
+        background: $backgroundSidebarHover;
+    }
+}
+

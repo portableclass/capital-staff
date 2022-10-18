@@ -1,0 +1,55 @@
+@import "default";
+
+.button-table {
+    display: flex;
+    height: 34px;
+    width: 34px;
+    position: relative;
+    justify-content: center;
+    margin-right: 12px;
+    border-radius: 0.25rem;
+    span {
+        display: flex;
+        position: relative;
+        align-items: center;
+    }
+    span svg {
+        fill: $white;
+    }
+}
+
+.create {
+    margin-right: 0px;
+    span svg {
+        fill: $black;
+    }
+}
+
+.read {
+    background-color: $btnTableRead;
+    &:hover {
+        background-color: $btnTableReadHover;
+    }
+}
+
+.update {
+    background-color: $btnTableUpdate;
+    &:hover {
+        background-color: $btnTableUpdateHover;
+    }
+}
+
+.delete {
+    background-color: $btnTableDelete;
+    margin-right: 0px;
+    &:hover {
+        background-color: $btnTableDeleteHover;
+    }
+}
+
+.statistics {
+    background-color: $btnTableStatistics;
+    &:hover {
+        background-color: $btnTableStatisticsHover;
+    }
+}

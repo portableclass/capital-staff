@@ -1,0 +1,21 @@
+@import "default";
+
+.home-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+    background: $background-2;
+    width: 100%;
+    height: 100%;
+}
+
+.short-info-wrapper {
+    display: inline-flex;
+    position: relative;
+    width: 100%;
+    height: 112px;
+    justify-content: space-between;
+    padding: 0px 24px;
+    background: $background-2;
+}

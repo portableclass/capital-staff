@@ -1,0 +1,43 @@
+@import "default";
+
+.update-table-wrapper {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0px 24px 24px 24px;
+    background: $background;
+    border: 1px solid $border;
+    padding: 24px; 
+    div {
+        h3 {
+            width: 100%;
+            font-size: 16px;
+            font-family: 'TTHoves-DemiBold';
+        }
+        input {
+            width: 100%;
+            font-size: 16px;
+            font-family: 'TTHoves-Regular';
+            padding: 8px 12px;
+            border: 1px solid $border;
+            border-radius: 0.25rem;
+        }
+    }
+    button {
+        margin-top: 12px;
+        background-color: $btnTableStatistics;
+        width: 115px;
+        padding: 8px;
+        text-align: center;
+        color: $white;
+        border-radius: 0.25rem;
+        font-size: 16px;
+        font-family: 'TTHoves-Regular';
+        text-decoration: none;
+        &:hover {
+            color: $white;
+            background-color: $btnTableStatistics;
+        }
+    }
+}
